@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "rhel66x64"
-  config.vm.box_url = "http://file.rdu.redhat.com/~mnairn/opscode_rhel-6.6_chef-provisionerless.box"
+  config.vm.box = "CentOS6.6_x64"
+  ####config.vm.box_url = "https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box"
   
   ## tmp sync folder...
   config.vm.synced_folder "../Software", "/fhmisc", create: true
