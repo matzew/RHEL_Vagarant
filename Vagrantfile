@@ -6,11 +6,13 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "../Software", "/fhmisc", create: true
   
   config.vm.network "forwarded_port", guest: 8080, host: 8890
+  config.vm.network "forwarded_port", guest: 8081, host: 8891
   config.vm.network "forwarded_port", guest: 3306, host: 4406
 
   config.vm.provision "chef_solo" do |chef|
       chef.add_recipe "java"
       chef.add_recipe "ark"
+      chef.add_recipe "jboss7"
   end
 
 end
