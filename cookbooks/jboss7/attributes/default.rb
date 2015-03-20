@@ -1,8 +1,8 @@
 default['jboss7']['jboss_path'] = '/opt'
 default['jboss7']['jboss_home'] = "#{node['jboss7']['jboss_path']}/jboss"
 default['jboss7']['jboss_user'] = 'web'
-default['jboss7']['jboss_version'] = '7.1.1.Final'
-default['jboss7']['dl_url'] = "http://download.jboss.org/jbossas/7.1/jboss-as-#{node['jboss7']['jboss_version']}/jboss-as-#{node['jboss7']['jboss_version']}.tar.gz"
+default['jboss7']['jboss_version'] = '6.3.3-full'
+default['jboss7']['dl_url'] = "https://www.dropbox.com/s/9yclhih4r7g6pkc/jboss-eap-#{node['jboss7']['jboss_version']}-build.zip?dl=1"
 default['jboss7']['jvm_min_mem'] = '512m'
 default['jboss7']['jvm_max_mem'] = '1024m'
 default['jboss7']['jvm_perm_mem'] = '256m'
